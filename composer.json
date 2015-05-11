@@ -1,0 +1,30 @@
+{
+    "name": "udan/vagrafony",
+    "description": "Integrates Vagrant into Symfony2",
+    "keywords": ["vagrant"],
+    "homepage": "https://github.com/udan/vagrafony",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dan Ursoviciu",
+            "email": "dan.ursoviciu@gmail.com",
+            "homepage": "http://udan.github.io/"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "symfony/framework-bundle": "~2.3",
+        "symfony/dependency-injection": "~2.3",
+        "symfony/console": "~2.3",
+        "symfony/yaml": "~2.3",
+    },
+    "require-dev": {
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-4": { "Symfony\\Bundle\\vagrafonyBundle\\": "" }
+    },
+    "minimum-stability": "dev"
+}
