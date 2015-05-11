@@ -1,7 +1,7 @@
 {
     "name": "udan/vagrafony",
     "description": "Integrates Vagrant into Symfony2",
-    "keywords": ["vagrant"],
+    "keywords": ["vagrant", "symfony"],
     "homepage": "https://github.com/udan/vagrafony",
     "type": "symfony-bundle",
     "license": "MIT",
@@ -24,7 +24,7 @@
     "suggest": {
     },
     "autoload": {
-        "psr-4": { "Symfony\\Bundle\\vagrafonyBundle\\": "" }
+        "psr-4": { "Udan\\Bundle\\VagrafonyBundle\\": "" }
     },
     "minimum-stability": "dev"
 }

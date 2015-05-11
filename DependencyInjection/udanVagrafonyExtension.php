@@ -1,6 +1,6 @@
 <?php
 
-namespace udan\VagrafonyBundle\DependencyInjection;
+namespace Udan\Bundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
