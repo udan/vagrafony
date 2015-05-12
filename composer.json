@@ -24,7 +24,7 @@
     "suggest": {
     },
     "autoload": {
-        "psr-4": { "Udan\\Bundle\\VagrafonyBundle\\": "" }
+        "psr-4": { "Udan\\Bundle\\": "" }
     },
     "minimum-stability": "dev"
 }
