@@ -18,7 +18,19 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('udan_vagrafony');
+        $rootNode = $treeBuilder->root('vagrafony');
+
+        $rootNode
+            ->children()
+                ->arrayNode('install_services')
+                    ->info('which services should be set up and started on the vagrant box')
+                    ->children()
+                        ->booleanNode('nginx')->defaultFalse()->end()
+                        ->booleanNode('apache')->defaultFalse()->end()
+                    ->end()
+                ->end()
+            ->end()
+        ;
 
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
