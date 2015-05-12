@@ -24,6 +24,7 @@ class Configuration implements ConfigurationInterface
             ->children()
                 ->arrayNode('install_services')
                     ->info('which services should be set up and started on the vagrant box')
+                    ->addDefaultsIfNotSet()
                     ->children()
                         ->booleanNode('nginx')->defaultFalse()->end()
                         ->booleanNode('apache')->defaultFalse()->end()
